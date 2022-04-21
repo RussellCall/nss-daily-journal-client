@@ -28,7 +28,7 @@ export const EntryForm = ({ entry, moods, onFormSubmit }) => {
 
     const constructNewEntry = () => {
         const copyEntry = { ...updatedEntry }
-        copyEntry.moodId = parseInt(copyEntry.moodId)
+        copyEntry.mood_Id = parseInt(copyEntry.mood_Id)
         if (!copyEntry.date) {
             copyEntry.date = Date(Date.now()).toLocaleString('en-us').split('GMT')[0]
         }
@@ -55,7 +55,7 @@ export const EntryForm = ({ entry, moods, onFormSubmit }) => {
                         <label htmlFor="entry" className="label">Entry: </label>
                         <div className="control">
                             <textarea
-                                class="textarea"
+                                className="textarea"
                                 name="entry"
                                 value={updatedEntry.entry}
                                 onChange={handleControlledInputChange}
@@ -63,12 +63,12 @@ export const EntryForm = ({ entry, moods, onFormSubmit }) => {
                         </div>
                     </div>
                     <div className="field">
-                        <label htmlFor="moodId" className="label">Mood: </label>
+                        <label htmlFor="mood_Id" className="label">Mood: </label>
                         <div className="control">
                             <div className="select">
-                                <select name="moodId"
+                                <select name="mood_Id"
                                     proptype="int"
-                                    value={updatedEntry.moodId}
+                                    value={updatedEntry.mood_Id}
                                     onChange={handleControlledInputChange}>
 
                                     <option value="0">Select a mood</option>
