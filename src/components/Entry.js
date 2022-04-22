@@ -21,7 +21,7 @@ export const Entry = ({ entry, mood, onEditButtonClick, onDeleteButtonClick }) =
   return (
     <article className={`message ${getMessageType()}`} style={{width:"100%"}}>
       <div className="message-body">
-        <p className="entry__concept">{entry.concept}</p>
+        <p className="entry__title">{entry.title}</p>
         <p className="entry__entry">{entry.entry}</p>
         <p className="entry__date">{entry.date}</p>
         <p className="entry__mood">{mood?.label}</p>

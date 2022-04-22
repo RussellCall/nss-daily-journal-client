@@ -35,7 +35,7 @@ export const DailyJournal = () => {
       addEntry(entryData).then(getAllEntries)
     }
     setEntry({
-      concept: "",
+      title: "",
       entry: "",
       mood_Id: 0
     })

@@ -41,12 +41,12 @@ export const EntryForm = ({ entry, moods, onFormSubmit }) => {
             <div className="panel-block">
                 <form style={{ width: "100%" }}>
                     <div className="field">
-                        <label htmlFor="concept" className="label">Concept: </label>
+                        <label htmlFor="title" className="label">Title: </label>
                         <div className="control">
-                            <input type="text" name="concept" required autoFocus className="input"
+                            <input type="text" name="title" required autoFocus className="input"
                                 proptype="varchar"
-                                placeholder="Concept"
-                                value={updatedEntry.concept}
+                                placeholder="Title"
+                                value={updatedEntry.title}
                                 onChange={handleControlledInputChange}
                             />
                         </div>
